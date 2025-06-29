@@ -1,0 +1,17 @@
+{
+  "name": "z_clue_web3_transactions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "ethers": "^6.14.4",
+    "express": "^5.1.0"
+  }
+}
