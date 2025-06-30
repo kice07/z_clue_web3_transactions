@@ -23,11 +23,6 @@ const serverWallet = Engine.serverWallet({
     vaultAccessToken: process.env.VAULT_ACCESS_TOKEN,
 });
 
-const contract = getContract({
-    client,
-    address: process.env.ZCLUE_TOKEN_ADDRESS,
-    chain: bscTestnet, // Replace with bscTestnet or mainnet as needed
-});
 
 
 
