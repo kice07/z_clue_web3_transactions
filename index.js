@@ -3,7 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { createThirdwebClient, Engine } from 'thirdweb';
 import { getContract, sendTransaction } from 'thirdweb';
-import { baseSepolia } from 'thirdweb/chains';
+import { bscTestnet} from 'thirdweb/chains';
 import { transfer } from 'thirdweb/extensions/erc20';
 
 // Load environment variables
