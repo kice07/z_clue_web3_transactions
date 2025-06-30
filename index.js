@@ -3,7 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { createThirdwebClient, Engine } from 'thirdweb';
 import { getContract, sendTransaction } from 'thirdweb';
-import { bscTestnet} from 'thirdweb/chains';
+import { bnbTestnet } from "thirdweb/chains";
 import { transfer } from 'thirdweb/extensions/erc20';
 
 // Load environment variables
@@ -35,7 +35,7 @@ app.post('/transfer', async (req, res) => {
     const contract = getContract({
       client,
       address: process.env.ZCLUE_TOKEN_ADDRESS,
-      chain: bscTestnet, // Replace with bscTestnet or mainnet as needed
+      chain: bnbTestnet, // Replace with bscTestnet or mainnet as needed
     });
 
     const transaction = transfer({
