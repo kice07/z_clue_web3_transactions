@@ -29,8 +29,7 @@ const contract = getContract({
     chain: bscTestnet, // Replace with bscTestnet or mainnet as needed
 });
 
-const balance = await contract.erc20.balanceOf(serverWallet.address);
-console.log(balance);
+
 
 // ERC20 Transfer Endpoint
 app.post('/transfer', async (req, res) => {
