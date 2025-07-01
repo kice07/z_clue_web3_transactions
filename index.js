@@ -72,7 +72,6 @@ app.post('/claim', async (req, res) => {
     const transaction = claimTo({
       contract,
       to,
-      tokenId: 0n, // If using ERC20, tokenId may be irrelevant; adjust if needed
       quantity: BigInt(amount),
     });
 
