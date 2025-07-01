@@ -34,7 +34,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import { createThirdwebClient, Engine } from 'thirdweb';
 import { getContract } from 'thirdweb';
-import { bscTestnet } from 'thirdweb/chains';
+import { defineChain } from 'thirdweb/chains';
 import { claimTo } from 'thirdweb/extensions/erc20';
 
 // Load environment variables
@@ -66,7 +66,7 @@ app.post('/claim', async (req, res) => {
     const contract = getContract({
       client,
       address: process.env.ZCLUE_TOKEN_ADDRESS,
-      chain: bscTestnet, // Replace with bscTestnet or mainnet as needed
+      chain: defineChain(97), // Replace with bscTestnet or mainnet as needed
     });
 
     const transaction = claimTo({
